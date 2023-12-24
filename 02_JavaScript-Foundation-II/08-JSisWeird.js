@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 // //JS is Weird...
 // function weird() {
@@ -9,9 +9,9 @@
 // weird();
 
 var heyhey = function doodle() {
-  //do something
-  return console.log('hhhhh');
-}
+	//do something
+	return console.log("hhhhh");
+};
 
-heyhey()
+heyhey();
 // doodle()
