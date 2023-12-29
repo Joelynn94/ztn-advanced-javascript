@@ -8,7 +8,7 @@ class Character {
   attack() {
     return `${this.name} Attack with ${this.weapon}`;
   }
-} 
+}
 
 class Elf extends Character {
   constructor(name, weapon, type) {

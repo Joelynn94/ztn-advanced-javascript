@@ -6,18 +6,18 @@ In JavaScript, each execution context (global or function) is connected to its o
 var globalVar = "global";
 
 function outer() {
-	var outerVar = "outer";
+  var outerVar = "outer";
 
-	function inner() {
-		var innerVar = "inner";
+  function inner() {
+    var innerVar = "inner";
 
-		// All variables are accessible in inner function
-		console.log(innerVar); // Outputs: 'inner'
-		console.log(outerVar); // Outputs: 'outer'
-		console.log(globalVar); // Outputs: 'global'
-	}
+    // All variables are accessible in inner function
+    console.log(innerVar); // Outputs: 'inner'
+    console.log(outerVar); // Outputs: 'outer'
+    console.log(globalVar); // Outputs: 'global'
+  }
 
-	inner();
+  inner();
 }
 
 outer();
@@ -33,8 +33,8 @@ With the introduction of let and const in ES6, JavaScript now has block scope in
 
 ```js
 if (true) {
-	let x = "x"; // x is only accessible within this block
-	console.log(x); // Outputs: 'x'
+  let x = "x"; // x is only accessible within this block
+  console.log(x); // Outputs: 'x'
 }
 console.log(x); // Outputs: ReferenceError: x is not defined
 ```
@@ -45,12 +45,12 @@ JavaScript has lexical scoping, which means that functions are executed using th
 
 ```js
 function init() {
-	var name = "Mozilla"; // name is a local variable created by init
-	function displayName() {
-		// displayName() is the inner function, a closure
-		console.log(name); // use variable declared in the parent function
-	}
-	displayName();
+  var name = "Mozilla"; // name is a local variable created by init
+  function displayName() {
+    // displayName() is the inner function, a closure
+    console.log(name); // use variable declared in the parent function
+  }
+  displayName();
 }
 init();
 ```
@@ -61,9 +61,9 @@ A closure is the combination of a function bundled together (enclosed) with refe
 
 ```js
 function makeAdder(x) {
-	return function (y) {
-		return x + y;
-	};
+  return function (y) {
+    return x + y;
+  };
 }
 
 var add5 = makeAdder(5);

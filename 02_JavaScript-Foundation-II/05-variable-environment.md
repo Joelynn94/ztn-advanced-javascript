@@ -4,10 +4,10 @@ Each execution context (global or function) in JavaScript has a variable environ
 
 ```javascript
 function outer() {
-	var x = "x"; // x is part of the variable environment of outer function
+  var x = "x"; // x is part of the variable environment of outer function
 
-	function inner() {
-		var y = "y"; // y is part of the variable environment of inner function
-	}
+  function inner() {
+    var y = "y"; // y is part of the variable environment of inner function
+  }
 }
 ```

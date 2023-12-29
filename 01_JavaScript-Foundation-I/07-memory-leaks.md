@@ -25,7 +25,7 @@ The setInterval function can cause memory leaks if it references objects that ar
 
 ```javascript
 setInterval(() => {
-	// referencing objects
+  // referencing objects
 });
 ```
 
@@ -35,10 +35,10 @@ Closures in JavaScript can potentially cause memory leaks if they hold reference
 
 ```javascript
 function outerFunction() {
-	const largeObject = new Array(1000000).fill("data");
-	return function innerFunction() {
-		console.log(largeObject);
-	};
+  const largeObject = new Array(1000000).fill("data");
+  return function innerFunction() {
+    console.log(largeObject);
+  };
 }
 const closure = outerFunction();
 ```
@@ -61,7 +61,3 @@ To prevent memory leaks:
 6. **Use Linters**: Tools like ESLint can help catch potential memory leaks.
 
 [Read more](https://auth0.com/blog/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them/)
-
-```
-
-```

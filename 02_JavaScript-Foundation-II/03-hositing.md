@@ -10,7 +10,7 @@ Functions are fully hoisted, which means the entire function and its contents ar
 console.log(myFunction()); // Outputs: "Hello, world!"
 
 function myFunction() {
-	return "Hello, world!";
+  return "Hello, world!";
 }
 ```
 
@@ -49,11 +49,11 @@ In this example, a ReferenceError is thrown when trying to access myLetVar befor
 ```javascript
 console.log(myFunction()); // Outputs: "Hello, world!"
 function myFunction() {
-	return "Hello, world!";
+  return "Hello, world!";
 }
 
 console.log(myFuncExpression()); // Outputs: TypeError: myFuncExpression is not a function
 var myFuncExpression = function () {
-	return "Hello, world!";
+  return "Hello, world!";
 };
 ```

@@ -6,12 +6,12 @@ JavaScript uses inline caching to optimize functions that are called multiple ti
 
 ```js
 function findUser(user) {
-	return `found ${user.firstName} ${user.lastName}`;
+  return `found ${user.firstName} ${user.lastName}`;
 }
 
 const userData = {
-	firstName: "Joe",
-	lastName: "Junior",
+  firstName: "Joe",
+  lastName: "Junior",
 };
 
 findUser(userData);
@@ -23,8 +23,8 @@ JavaScript compilers use hidden classes to optimize object property access. Main
 
 ```js
 function Animal(x, y) {
-	this.x = x;
-	this.y = y;
+  this.x = x;
+  this.y = y;
 }
 
 // Consistent property order optimizes code

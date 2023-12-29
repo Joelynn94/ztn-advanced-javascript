@@ -8,7 +8,7 @@ In function scope, variables are only accessible within the function where they 
 
 ```js
 function testScope() {
-	var inFunction = "visible";
+  var inFunction = "visible";
 }
 
 console.log(inFunction); // Outputs: ReferenceError: inFunction is not defined
@@ -20,7 +20,7 @@ Block scope, introduced in ES6 with let and const, confines variables to the blo
 
 ```js
 if (true) {
-	let inBlock = "visible";
+  let inBlock = "visible";
 }
 
 console.log(inBlock); // Outputs: ReferenceError: inBlock is not defined
@@ -28,9 +28,9 @@ console.log(inBlock); // Outputs: ReferenceError: inBlock is not defined
 
 ## Key Differences
 
--   **`var`**: Variables declared with `var` are function-scoped, meaning they are only accessible within the function they are declared in.
+- **`var`**: Variables declared with `var` are function-scoped, meaning they are only accessible within the function they are declared in.
 
--   **`let` and `const`**: Variables declared with `let` and `const` are block-scoped, meaning they are only accessible within the block they are declared in.
+- **`let` and `const`**: Variables declared with `let` and `const` are block-scoped, meaning they are only accessible within the block they are declared in.
 
 Understanding the difference between function scope and block scope is crucial for managing variable visibility and avoiding potential bugs in your code.
 

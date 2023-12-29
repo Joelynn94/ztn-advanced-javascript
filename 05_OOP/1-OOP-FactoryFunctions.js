@@ -5,12 +5,12 @@ function createElf(name, weapon) {
     name: name,
     weapon: weapon,
     attack() {
-      return console.log(name + ' attacks with ' + weapon)
-    }
-  }
+      return console.log(name + " attacks with " + weapon);
+    },
+  };
 }
 
-const peter = createElf('Peter', 'stones')
-peter.attack()
-const sam = createElf('Sam', 'fire')
-sam.attack()
+const peter = createElf("Peter", "stones");
+peter.attack();
+const sam = createElf("Sam", "fire");
+sam.attack();

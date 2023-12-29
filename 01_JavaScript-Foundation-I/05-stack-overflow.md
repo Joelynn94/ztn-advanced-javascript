@@ -10,13 +10,13 @@ To prevent a stack overflow, you can use a technique called trampolining. This i
 const list = new Array(60000).join("1.1").split(".");
 
 function removeItemsFromList() {
-	var item = list.pop();
+  var item = list.pop();
 
-	if (item) {
-		setTimeout(removeItemsFromList, 0);
-	} else {
-		console.log("End = " + list.length);
-	}
+  if (item) {
+    setTimeout(removeItemsFromList, 0);
+  } else {
+    console.log("End = " + list.length);
+  }
 }
 
 removeItemsFromList();

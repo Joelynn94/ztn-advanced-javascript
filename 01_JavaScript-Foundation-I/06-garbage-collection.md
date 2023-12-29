@@ -11,8 +11,8 @@ This algorithm reduces the definition of "an object is no longer needed" to "an 
 
 ```javascript
 let human = {
-	firstName: "Joe",
-	lastName: "Lynn",
+  firstName: "Joe",
+  lastName: "Lynn",
 };
 
 human = 5; // The object previously referenced by 'human' is now unreachable and can be garbage collected

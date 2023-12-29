@@ -8,12 +8,12 @@ Every execution context (or 'running state' of a function) has its own variable 
 
 ```javascript
 function two() {
-	var isValid; // isValid is undefined in this execution context.
+  var isValid; // isValid is undefined in this execution context.
 }
 
 function one() {
-	var isValid = true; // this variable will be put into the new execution context. It's its own variable environment
-	two(); // New execution context created.
+  var isValid = true; // this variable will be put into the new execution context. It's its own variable environment
+  two(); // New execution context created.
 }
 
 var isValid = false; // Global variable is created as undefined. Then during execution, it changes in memory to false.
@@ -42,14 +42,14 @@ When functions are nested, each function creates its own lexical environment. Th
 
 ```javascript
 function outer() {
-	let x = 1;
+  let x = 1;
 
-	function inner() {
-		let y = 2;
-		// Here, we have access to both x and y
-	}
+  function inner() {
+    let y = 2;
+    // Here, we have access to both x and y
+  }
 
-	// Here, we only have access to x
+  // Here, we only have access to x
 }
 ```
 
@@ -69,14 +69,14 @@ Here's an example:
 var x = 1;
 
 function outer() {
-	var y = 2;
+  var y = 2;
 
-	function inner() {
-		var z = 3;
-		console.log(x + y + z); // Outputs: 6
-	}
+  function inner() {
+    var z = 3;
+    console.log(x + y + z); // Outputs: 6
+  }
 
-	inner();
+  inner();
 }
 
 outer();

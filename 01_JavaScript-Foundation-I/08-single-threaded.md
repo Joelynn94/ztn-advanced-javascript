@@ -13,7 +13,7 @@ In contrast to synchronous execution, JavaScript also supports asynchronous exec
 ```javascript
 console.log("1");
 setTimeout(() => {
-	console.log("2");
+  console.log("2");
 }, 1000);
 console.log("3");
 ```

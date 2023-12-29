@@ -1,30 +1,30 @@
-// const a = function () {
-//   console.log(this);
+const a = function () {
+  console.log(this);
 
-//   const b = function () {
-//     console.log(this);
+  const b = function () {
+    console.log(this);
 
-//     const c = {
-//       hi: function () {
-//         console.log(this);
-//       },
-//     };
-//     c.hi();
-//   };
-//   b();
-// };
+    const c = {
+      hi: function () {
+        console.log(this);
+      },
+    };
+    c.hi();
+  };
+  b();
+};
 
-// a();
+a();
 
 const obj = {
-	name: "Billy",
-	sing() {
-		console.log("a", this);
-		var anotherFunc = () => {
-			console.log("b", this);
-		};
-		return anotherFunc.bind(this);
-	},
+  name: "Billy",
+  sing() {
+    console.log("a", this);
+    var anotherFunc = () => {
+      console.log("b", this);
+    };
+    return anotherFunc.bind(this);
+  },
 };
 
 obj.sing()();

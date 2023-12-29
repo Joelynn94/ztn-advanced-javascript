@@ -8,9 +8,9 @@ The memory heap is where memory allocation happens in JavaScript. It's where var
 const numb = 610; // allocate memory for a number
 const str = "some text"; // allocate memory for a string
 const human = {
-	// allocate memory for an object and its values
-	firstName: "Joe",
-	lastName: "Lynn",
+  // allocate memory for an object and its values
+  firstName: "Joe",
+  lastName: "Lynn",
 };
 ```
 
@@ -20,12 +20,12 @@ The call stack is where JavaScript keeps track of where your code is in its exec
 
 ```javascript
 function subtractTwo(num) {
-	return num - 2;
+  return num - 2;
 }
 
 function calculate() {
-	const sumTotal = 4 + 5;
-	return subtractTwo(sumTotal);
+  const sumTotal = 4 + 5;
+  return subtractTwo(sumTotal);
 }
 
 calculate(); // adds calculate() to the call stack, then subtractTwo()
