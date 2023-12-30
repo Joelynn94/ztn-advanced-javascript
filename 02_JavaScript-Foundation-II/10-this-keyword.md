@@ -27,10 +27,10 @@ const boundGreet = person.greet.bind(person);
 boundGreet(); // Outputs: "Hello, Alice!"
 
 const person = {
-  name: "Alice",
-  greet: function () {
-    console.log(`Hello, ${this.name}!`);
-  },
+	name: "Alice",
+	greet: function () {
+		console.log(`Hello, ${this.name}!`);
+	},
 };
 
 person.greet(); // Outputs: "Hello, Alice!"

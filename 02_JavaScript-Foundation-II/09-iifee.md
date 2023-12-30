@@ -4,8 +4,16 @@ An IIFE is a function expression that is invoked as soon as it is defined. No gl
 
 ```js
 (function () {
-  console.log("Hello, world!");
+	console.log("Hello, world!");
 })(); // Outputs: "Hello, world!"
+```
+
+You can pass arguments to an IIFE just like you would with any other function:
+
+```js
+(function (greeting, name) {
+	console.log(greeting + ", " + name + "!");
+})("Hello", "world"); // Outputs: "Hello, world!"
 ```
 
 ## Takeaways and Best Practices
